@@ -1152,8 +1152,9 @@ int lgw_receive(uint8_t max_pkt, struct lgw_pkt_rx_s *pkt_data) {
             break;
         }
 
-        DEBUG_PRINTF("FIFO content: %x %x %x %x %x\n", buff[0], buff[1], buff[2], buff[3], buff[4]);
+        DEBUG_PRINTF("FIFO content: %x %x %x %x %x EXTRA: %x %x \n", buff[0], buff[1], buff[2], buff[3], buff[4], buff[5], buff[6]);
 
+        buff[4] = 16;
         p->size = buff[4];
         sz = p->size;
         stat_fifo = buff[3]; /* will be used later, need to save it before overwriting buff */
