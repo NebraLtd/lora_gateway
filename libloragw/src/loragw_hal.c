@@ -1135,7 +1135,7 @@ int lgw_receive(uint8_t max_pkt, struct lgw_pkt_rx_s *pkt_data) {
         p = &pkt_data[nb_pkt_fetch];
 
         /* fetch all the RX FIFO data */
-        lgw_reg_rb(LGW_RX_PACKET_DATA_FIFO_NUM_STORED, buff, 5);
+        lgw_reg_rb(LGW_RX_PACKET_DATA_FIFO_NUM_STORED, buff, 7);
         /* 0:   number of packets available in RX data buffer */
         /* 1,2: start address of the current packet in RX data buffer */
         /* 3:   CRC status of the current packet */
