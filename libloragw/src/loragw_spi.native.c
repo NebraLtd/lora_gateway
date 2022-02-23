@@ -332,6 +332,7 @@ int lgw_spi_rb(void *spi_target, uint8_t spi_mux_mode, uint8_t spi_mux_target, u
     int size_to_do, chunk_size, offset;
     int byte_transfered = 0;
     int i;
+    int j;
 
     /* check input parameters */
     CHECK_NULL(spi_target);
