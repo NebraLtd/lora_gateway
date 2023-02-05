@@ -4,7 +4,7 @@
 
 ARG BUILD_BOARD
 
-FROM balenalib/"$BUILD_BOARD"-debian:bullseye-build as lora-gateway-sx1301-builder
+FROM balenalib/"$BUILD_BOARD"-debian:bullseye-build AS lora-gateway-sx1301-builder
 
 ENV ROOT_DIR=/opt
 
