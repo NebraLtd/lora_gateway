@@ -2,7 +2,9 @@
 # $OUTPUT_DIR/$SPI_BUS respectively. Also copies reset_lgw.sh
 # to $OUTPUT_DIR.
 
-FROM balenalib/raspberry-pi-debian:buster-build as lora-gateway-sx1301-builder
+ARG BUILD_BOARD
+
+FROM balenalib/"$BUILD_BOARD"-debian:bullseye-build as lora-gateway-sx1301-builder
 
 ENV ROOT_DIR=/opt
 
