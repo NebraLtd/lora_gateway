@@ -150,7 +150,7 @@ Maintainer: Sylvain Miermont
 #define RX_SUSPENDED        3    /* RX is suspended while a TX is ongoing */
 
 /* Maximum size of Tx gain LUT */
-#define TX_GAIN_LUT_SIZE_MAX 16
+#define TX_GAIN_LUT_SIZE_MAX 32
 
 /* LBT constants */
 #define LBT_CHANNEL_FREQ_NB 8 /* Number of LBT channels */
